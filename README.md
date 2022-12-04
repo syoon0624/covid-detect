@@ -35,8 +35,35 @@ ResNet은 마이크로소프트사에서 개발한 알고리즘이며, 해당 �
 
 ## 연구 내용(방법 및 실험)
 
+1. 프로젝트 사용 언어: Python
+
+- 딥러닝을 구현하는데 있어 가장 보편적인 언어인 Python을 채택하였다. 또한 코드 구동 환경으로 Google의 GPU 서버와 코드에디터등을 제공해주는 Google Colab을 사용하였다. 이를 통해 로컬에서 코드를 작성/저장 및 구동하지 않고 웹 브라우저 상에서 코드를 작성하고 모델을 학습시킬 수 있다는 점에서 큰 장점이 되었다.
+
+2. 사용 라이브러리: PyTorch
+
+- 앞서 언급한 대로 COVID-Net 오픈소스는 tensorflow 라이브러리로 구성되어있다. 하지만 조금 더 직관적이고 진입 난이도가 쉬운 PyTorch 라이브러리를 사용하여 해당 프로젝트를 시행하였다.
+
+3. layer: ResNet18
+
+4. 데이터셋: Kaggle사이트 내에 존재하는 COVID-19 Radiography 데이터셋을 사용하였으며, 정상 흉부 이미지 1311장, 단순 바이러스 성 질환으로 판정받은 이미지 1315, Covid-19를 판정받은 흉부 x선 이미지 189장으로 되어 있다.
+
 ## 연구 결과
 
 ## Reference
+
+[1] Wang, Linda, Zhong Qiu Lin, and Alexander Wong. "Covid-net: A tailored deep convolutional neural network design for detection of covid-19 cases from chest x-ray images." Scientific Reports 10, no. 1 (2020): 1-12.
+[2] Covid-CXR:
+https://www.kaggle.com/datasets/andyczhao/covidx-cxr2?select=competition_test
+[3] https://github.com/ieee8023/covid-chestxray-dataset.git
+
+[4] https://github.com/agchung/Figure1-COVID-chestxray-dataset.git
+
+[5] https://github.com/agchung/Actualmed-COVID-chestxray-dataset.git
+
+[6]https://github.com/IliasPap/COVIDNet.git
+
+[7] Deng, J. et al. Imagenet: a large-scale hierarchical image database. In 2009 IEEE Conference on Computer Vision and Pattern Recognition 248–255 (IEEE, 2009).
+[8] https://github.com/lindawangg/COVID-Net
+[9] Brixia: https://brixia.github.io/
 
 ### Contact: email: syoon624@naver.com
