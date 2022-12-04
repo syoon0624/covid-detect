@@ -48,12 +48,31 @@ ResNet은 마이크로소프트사에서 개발한 알고리즘이며, 해당 �
 4. 데이터셋: Kaggle사이트 내에 존재하는 COVID-19 Radiography 데이터셋을 사용하였으며, 정상 흉부 이미지 1311장, 단순 바이러스 성 질환으로 판정받은 이미지 1315, Covid-19를 판정받은 흉부 x선 이미지 189장으로 되어 있다.
 
 ## 연구 결과
+- 이미지 시각화 및 라벨링
+색글씨별 라벨: 초록색인 경우, 판별 성공 / 빨간색인 경우, 판별 실패
+<img width="628" alt="스크린샷 2022-12-04 오후 11 20 38" src="https://user-images.githubusercontent.com/77139957/205495899-876d92c0-50e4-444f-ab11-b4e67de52903.png">
+
+- 초기 학습 없이 예측한 결과
+예측 성공률이 매우 낮은 것을 확인할 수 있다.
+<img width="646" alt="스크린샷 2022-12-04 오후 11 22 10" src="https://user-images.githubusercontent.com/77139957/205496016-4f3c3140-3e28-48a1-9131-bcd286ee302a.png">
+
+- 학습 후 예측 결과
+### 테스트 이미지
+nomal: 30 images
+viral: 30 images
+covid: 30 images
+
+|Validation Loss|Accuracy|
+|------|---|
+|0.1597|0.9556|
 
 ## Reference
 
 [1] Wang, Linda, Zhong Qiu Lin, and Alexander Wong. "Covid-net: A tailored deep convolutional neural network design for detection of covid-19 cases from chest x-ray images." Scientific Reports 10, no. 1 (2020): 1-12.
+
 [2] Covid-CXR:
 https://www.kaggle.com/datasets/andyczhao/covidx-cxr2?select=competition_test
+
 [3] https://github.com/ieee8023/covid-chestxray-dataset.git
 
 [4] https://github.com/agchung/Figure1-COVID-chestxray-dataset.git
